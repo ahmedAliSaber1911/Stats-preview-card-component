@@ -1,0 +1,95 @@
+:root{
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --White : hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+/* general */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%; /*to use rem */
+}
+body{
+    background-color: var(--Very-dark-blue);
+    font-family: 'Overpass', sans-serif ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+/* card  */
+.card{
+    width: 76%;
+    height: 65%;
+    background-color: var(--Dark-desaturated-blue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: .9rem;
+    min-width: 76%;
+}
+/* image  */
+.img{
+    border-radius: 0 .9rem .9rem 0 ;
+    height: 100%;
+    width: 50%;
+    flex-shrink: 0;
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61% , .5);
+}
+/* content  */
+.content{
+    padding: 6.5rem;
+}
+h1{
+    color: var(--White);
+    font-size: 4.2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+.insights{
+    color: var(--Soft-violet);
+}
+.text{
+    color:var(--Slightly-transparent-white) ;
+    font-size: 1.8rem;
+    padding-right: 5.2rem;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+
+}
+.rate{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 10rem;
+}
+h2{
+    color: var(--White);
+    font-size: 2.5rem;
+    margin-bottom: .6rem;
+}
+p{
+    color: var(--Slightly-transparent-white);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+}
